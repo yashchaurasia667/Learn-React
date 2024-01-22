@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-
 export default function About() {
 
     const [mystyle, setmystyle] = useState({
@@ -11,7 +10,7 @@ export default function About() {
     const [btnText, setBtnText] = useState('Enable light mode');
 
     const toggleStyle = () => {
-        if (mystyle.color == 'white') {
+        if (mystyle.color === 'white') {
             setmystyle({
                 color: 'black',
                 backgroundColor: 'white'

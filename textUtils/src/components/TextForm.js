@@ -16,7 +16,7 @@ export default function TextForm(props) {
         <>
             <div className="container">
                 <h1>{props.heading}</h1>
-                <div className="mb-3">
+                <div className={`mb-3`}>
                     <textarea className="form-control" id="myBox" rows="8" placeholder="Random bullshit text" value={text} onChange={handleOnChange}></textarea>
                 </div>
                 <button className="btn btn-primary" onClick={handleUpClick}>click and see</button>
