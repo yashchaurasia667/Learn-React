@@ -8,12 +8,14 @@ import {
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import JobsPage from "./pages/JobsPage";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout></MainLayout>}>
       <Route index element={<HomePage />}></Route>
       <Route path="/jobs" element={<JobsPage />}></Route>
+      <Route path="*" element={<NotFound />}></Route>
     </Route>
   )
 );
